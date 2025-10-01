@@ -1,0 +1,44 @@
+html {
+  background-color: slategray;
+}
+
+header {
+  background-color: gray;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10vw;
+}
+
+/* header li {
+  padding: 10px;
+} */
+
+header li:hover {
+  background-color: yellow;
+  animation-name: linkHoverAnimation;
+  animation-duration: 0.5s;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Animations */
+@keyframes linkHoverAnimation {
+  0% {
+    background-color: gray;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
